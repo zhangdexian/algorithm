@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>策略模式小组分享</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <!--Plugin CSS file with desired skin-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="operate-wrap">
+        <div class="btn-group">
+            <button type="button" id="start" class="btn btn-primary">启动</button>
+            <button type="button" id="reset" class="btn btn-success">重置</button>
+        </div>
+        <div class="time-wrap"></div>
+        <!-- <button type="button" class="btn btn-info">（一般信息）Info</button>
+                <button type="button" class="btn btn-warning">（警告）Warning</button> -->
+    </div>
+    <div class="container-fluid">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label">选择策略</label>
+                <div class="col-md-3">
+                    <select id="algorithmSelect" class="form-control">
+                        <option value="linear">linear</option>
+                        <option value="easeIn">easeIn</option>
+                        <option value="strongEaseIn">strongEaseIn</option>
+                        <option value="strongEaseOut">strongEaseOut</option>
+                        <option value="sineaseIn">sineaseIn</option>
+                        <option value="sineaseOut">sineaseOut</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label">起始位置</label>
+                <div class="col-md-3">
+                    <input type="text" class="J_startPosition" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label">结束位置</label>
+                <div class="col-md-3">
+                    <input type="text" class="J_endPosition">
+                </div>
+            </div>
+            <div class="form-group">
+                    <label class="control-label">持续时间</label>
+                    <div class="col-md-3">
+                        <input type="text" class="J_duration">
+                    </div>
+                </div>
+        </form>
+    </div>
+    <div class="content">
+        <div id="div">我是 div</div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"
+        integrity="sha384-L2pyEeut/H3mtgCBaUNw7KWzp5n9+4pDQiExs933/5QfaTh8YStYFFkOzSoXjlTb" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+    <script src="./js/algorithm.js"></script>
+    <script src="./js/animate.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
